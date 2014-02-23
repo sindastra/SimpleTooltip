@@ -10,7 +10,7 @@ First of all add the jQuery and SimpleTooltip scripts
 and then add the SimpleTooltip css!
 ```html
 <link rel="stylesheet" type="text/css" href="path/to/simpletooltip.min.css">
-```html
+```
 Then add
 ```html
 <div id="tooltip"></div>
