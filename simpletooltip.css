@@ -7,16 +7,17 @@
 #tooltip {
     display:none;
     position:fixed;
-    min-height: 20px;
+    min-height: 10px;
     min-width: 100px;
+    font-family: sans-serif;
     font-weight: bold;
     font-size:12px;
     color:white;
     background-color:black; /* Fallback for browsers that do not support rgba */
     background-color:rgba(0,0,0,0.7);
-    border-radius:7px;
+    border-radius:0 6px 6px 6px;
     border:1px solid black;
-    padding:5px 15px 5px 15px;
+    padding:5px 10px 5px 10px;
 }
 .show {
     display:inline!important;
