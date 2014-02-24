@@ -1,6 +1,8 @@
 SimpleTooltip
 =============
 Add simple tooltips to your website (Requires jQuery).
+### How to get it ###
+Check the [releases page](https://github.com/sindastra/SimpleTooltip/releases) for the minified versions.
 ### How to use ###
 First of all add the jQuery and SimpleTooltip scripts
 ```html
@@ -18,6 +20,7 @@ Then add
 to your HTML, for example right after the body tag.
 
 Now let's say you want to create a tooltip for a link, that says: "This will open in a new window".
+
 1. Add the class "tt" to your link, to declare that you want a tooltip there.
 2. Add the attribute data-tooltip with the content that you want to be in your tooltip.
 
