@@ -18,14 +18,16 @@
 var mouseX = 0;
 var mouseY = 0;
 
+var tt  = $("#tooltip");
+var ttc = $(".tt");
+
 $(document).mousemove(function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
 
-$(".tt").hover(function() {
-    // mouse in
-    var tt = $("#tooltip");
+ttc.hover(function() {
+    // mouse in    
     var tc = $(this).attr("data-tooltip");
     if (tc == null) {
         tc = "DEBUG: you forgot to add 'data-tooltip'!";
@@ -39,7 +41,6 @@ $(".tt").hover(function() {
     }    
 },function() {
     // mouse out
-    var tt = $("#tooltip");
     var te = $(this).attr("data-tt-effect");
     if (te == "fade"){
         tt.fadeOut(100);
@@ -49,6 +50,6 @@ $(".tt").hover(function() {
     }    
 });
 
-$(".tt").mousemove(function() {
-    $("#tooltip").css({"top":mouseY+5,"left":mouseX+5});
+ttc.mousemove(function() {
+    tt.css({"top":mouseY+5,"left":mouseX+5});
 });
