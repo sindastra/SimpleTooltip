@@ -31,7 +31,6 @@ $(".tt").hover(function() {
         tc = "DEBUG: you forgot to add 'data-tooltip'!";
     }
     tt.text(tc);
-    tt.css({"top":mouseY+5,"left":mouseX+5});
     var te = $(this).attr("data-tt-effect");
     if (te == "fade"){
         tt.fadeIn();
@@ -48,4 +47,8 @@ $(".tt").hover(function() {
         tt.removeClass("show");
         tt.text("");
     }    
+});
+
+$(".tt").mousemove(function() {
+    $("#tooltip").css({"top":mouseY+5,"left":mouseX+5});
 });
