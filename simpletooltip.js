@@ -37,7 +37,7 @@ ttc.hover(function() {
     if (te == "fade"){
         tt.fadeIn();
     }else{
-        tt.addClass("show");
+        tt.show();
     }    
 },function() {
     // mouse out
@@ -45,7 +45,7 @@ ttc.hover(function() {
     if (te == "fade"){
         tt.fadeOut(100);
     }else{
-        tt.removeClass("show");
+        tt.hide();
         tt.text("");
     }    
 });
